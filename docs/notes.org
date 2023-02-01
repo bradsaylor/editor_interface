@@ -1,0 +1,48 @@
+* An array of WIDTH * HEIGHT is created
+* The array is filled with 0's
+* An operation is requested and performed.
+* Atomic operations:
+** Push array forward
+** Pull array back
+** Insert a character at index
+** Move cursor
+* Complex operations:
+** Key UP/DOWN/LEFT/RIGHT
+** Delete
+** Backspace
+** Return
+** Space
+** CHAR (any other keypress)
+* Complex operations are composed by of multiple atomic operations
+* After operation is completed the array is evaluated according to rules
+* Rules:
+** Indexes Xe for which INDEX % WIDTH = WIDTH - 1, must contain a 0
+* If array does not comply with rules an algorithm is employed to bring it into compliance
+* Algorithm:
+** Each Xe is evaluated starting from beginning of array
+** If rule is violated move cursor back 1 and pull array back
+* Example #1(doesn't work)
+
+today00000  backspace requested at 'w' in second row
+was0great0
+0000000000
+
+today0000w backspace performed and evaluated to violate rule
+as0great00
+0000000000
+
+today0000w go to first continguous 0 before Xe perform pull back
+as0great00
+0000000000
+
+today000wa evaluated to violate rule, pull back again
+s0great000
+0000000000
+
+today00was evaluated to violate rule, pull back again
+0great0000
+0000000000
+
+today0was0 evaluated to comply with rule so move to next Xe and repeat
+great00000
+0000000000

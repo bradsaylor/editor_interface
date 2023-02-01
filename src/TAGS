@@ -1,0 +1,26 @@
+
+main.c,661
+#define SCN_WIDTH 46,1420
+#define SCN_HEIGHT 47,1441
+#define KEY_RET 48,1463
+#define KEY_SPC 49,1482
+#define CTRL_TIL 50,1501
+int main(73,2549
+int push_forward(103,3285
+int pull_back(114,3471
+int process_array(128,3700
+int try_left_fit(140,4045
+int right_fit(169,4736
+int count_nulls(184,5085
+int count_wrap_chars(198,5294
+int input_handler(208,5520
+int handle_KEY_DOWN(255,6566
+int handle_KEY_UP(262,6653
+int handle_KEY_RIGHT(269,6736
+int handle_KEY_LEFT(276,6814
+int handle_KEY_RET(283,6891
+int handle_KEY_DC(296,7165
+int handle_KEY_BACKSPACE(303,7290
+int handle_char_input(318,7599
+int print_array(327,7790
+int print_display(343,8160
